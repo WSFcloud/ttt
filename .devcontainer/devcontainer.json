@@ -1,0 +1,20 @@
+{
+	"name": "test",
+	"build": {
+	  "dockerfile": "../Dockerfile",
+	  "args": {
+		"DEBIAN_FRONTEND": "noninteractive"
+	  }
+	},
+	"postCreateCommand": "rustup show",
+	"customizations": {
+	  "vscode": {
+		"extensions": [
+		  "rust-lang.rust-analyzer",
+		  "ms-vscode.cpptools",
+		  "tamasfe.even-better-toml"
+		]
+	  }
+	}
+  }
+  
